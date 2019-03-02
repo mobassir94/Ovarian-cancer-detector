@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="type/css" href="{{url_for('static', filename='css/style.css')}}" </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="brandname">
+                    ML App
+                </div>
+                <h2>Affected by ovarian cancer? </h2>
+            </div>
+        </header>
+
+        <p style="color:blue;font-size:20;text-align:center;"></p>
+        <b style="color:red">Results For patient :</b>
+		<b></b>According to catboostclassifier(gradient boosting algorithm) :</b>
+        <div class="results">
+            {% if prediction == 1 %}
+            <h2 style="color:red">YES,you are probably Affected by ovarian Cancer!!!</h2>
+            {% elif prediction == 0%}
+            <h2 style="color:green">No,you are probably not Affected by ovarian Cancer!!</h2>
+			{% endif %}
+			{% if score <= 2 %}
+            <h2 style="color:green">Your RISK LEVEL : Very Low and your score is : {{ score }} out of 32(max) </h2>
+            {% elif score >2 and score <=12%}
+            <h2 style="color:green">Your RISK LEVEL : Low and your score is :{{ score }} out of 32(max)</h2>
+			{% elif score >12 and score <=15%}
+            <h2 style="color:yellow">Your RISK LEVEL : Medium  and your score is :{{ score }} out of 32(max)</h2>
+			{% elif score >15 and score <=24%}
+            <h2 style="color:red">Your RISK LEVEL : HIGH  and your score is :{{ score }} out of 32(max)</h2>
+			{% elif score >24 and score <=32%}
+            <h2 style="color:red">Your RISK LEVEL : Extremely HIGH  and your score is :{{ score }} out of 32(max)</h2>
+			{% endif %}
+        </div>
+
+		<p style="color:red">
+          <br>Very Low = score <= 2<br>
+          Low = score >2 and score <= 12<br>
+          Medium = score >12 and score <=15<br>
+         High = score >15 and score <=24<br>
+         Extremely HIGH = score > 24 and score <= 32<br>
+		
+
+
+         </p>
+		 
+		 <p style="color:blue;font-size:20;text-align:center;">
+		  <br>
+	 
+<p style="color:green;">"Menarche start early?” : </p>
+Normal =0, sup=0.423, conf = 0.992(no)
+Late = 3, sup=0.244, conf = 0.922(yes)
+Early = 2   sup=0.041, conf = 1 (yes)
+<br>
+
+ <p style="color:green;">"Oral Contraception?" : </p> 
+
+Yes =0, sup=0.444, conf = 0.912(no)
+No = 3, sup=0.285, conf = 0.932(yes)
+<br>
+<p style="color:green;">"Diet Maintain?" : </p>
+
+Yes =2, sup=0.125, conf = 0.972(yes)
+No = 3, sup=0.285, conf = 0.932(yes)
+<br>
+
+<p style="color:green;">"Affected By Breast Cancer?" : </p>
+
+Yes = 3, sup=0.285, conf = 0.932(yes)
+No =0, sup=0.466, conf = 0.949(n0)
+<br>
+
+<p style="color:green;">"Affected By cervical Cancer?" : </p>
+
+Yes = 3, sup=0.285, conf = 0.932(yes)
+No =0, sup=0.466, conf = 0.949(no)
+<br>
+
+<p style="color:green;">"Cancer History In family?" : </p>
+
+Yes = 2   sup=0.037, conf = 1 (yes)
+
+No =0, sup=0.462, conf = 0.949(no)
+
+<br>
+<p style="color:green;">"Education?" : </p>
+
+Graduated = 0  (yes = 5, no = 18)
+Illiterate = 3, sup=0.029, conf = 1 (yes)
+Primary level = 2, sup=0.029, conf = 1 (yes)(list a illiterate er p0re asce besi rules er m0ddhe) and 0nekbar ai primary level n0 disease er sathe 0 ase
+<br>
+<p style="color:green;">"Age of Husband?" : </p>
+
+31-45 = 0 (no = 50, yes =5)
+46-60 = 3, sup=0.285, conf = 0.932(yes)
+Above 60 =2 (no=7,yes=12)
+Below 30 = 1(no=5,yes=7)
+<br>
+
+<p style="color:green;">“Menopause End age?” : </p>
+40-51 = 0, sup=0.029, conf = 1(no)
+After 51 = 3, sup=0.285, conf = 0.932(yes)
+Before 40 = 2, sup=0.025, conf = 1(yes)
+<br>
+<p style="color:green;">"Food contains high fat?" : </p>
+
+Yes = 3, sup=0.120, conf = 1 (yes) (1 ta rule,eitar jnn0 e yes disease)
+No = 2, sup=0.029, conf = 1 (yes)
+<br>
+
+<p style="color:green;">"Abortion?" :</p>
+
+
+Yes = 3, sup=0.285, conf = 0.932(yes)
+No = 0, sup=0.466, conf = 0.935(no)
+
+		 </p>
+    </body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>Cancer</title>
+    <link rel="stylesheet" type="type/css" href="{{url_for('static', filename='css/styles.css')}}" </head>
+
+<body>
+<div class="container-fluid" id="feedback">
+  <h1 style="color:red"><br> ovarian cancer predictor App <br></h2>
+    </p>
+    <form action="{{ url_for('feedback') }}" method="post">
+       
+	  
+	  
+        <div class="jumbotron">
+            <label class="sr-only" for="menarchestarts1"><br>Menarche starts? </label>
+            <select class="form-control" id="menarchestarts1" name="menarchestarts1">
+                <option value="0">Early</option>
+                <option value="1">Late</option>
+                <option value="2">Normal</option>
+            </select>
+			
+			<label class="sr-only" for="oralc1"><br><br>Oral Contraception? </label>
+            <select class="form-control" id="oralc" name="oralc1">
+                <option value="0">yes</option>
+                <option value="1">no</option>
+            </select>
+			
+			<label class="sr-only" for="Diet"><br><br>Diet Maintain? </label>
+            <select class="form-control" id="Diet" name="Diet">
+                <option value="0">yes</option>
+                <option value="1">no</option>
+            </select>
+			
+			<label class="sr-only" for="brcancer"><br><br>Affected By Breast Cancer? </label>
+            <select class="form-control" id="brcancer" name="brcancer">
+                <option value="0">yes</option>
+                <option value="1">no</option>
+            </select>
+			
+			<label class="sr-only" for="carcancer"><br><br>Affected By cervical Cancer? </label>
+            <select class="form-control" id="carcancer" name="carcancer">
+                <option value="0">yes</option>
+                <option value="1">no</option>
+            </select>
+			
+			<label class="sr-only" for="canhist"><br><br>Cancer History In family? </label>
+            <select class="form-control" id="canhist" name="canhist">
+                <option value="0">yes</option>
+                <option value="1">no</option>
+            </select>
+			
+			<label class="sr-only" for="edulev"><br><br>Education level? </label>
+            <select class="form-control" id="edulev" name="edulev">
+                <option value="0">primary level</option>
+                <option value="1">illitarate</option>
+				<option value="2">graduated</option>
+            </select>
+			
+			<label class="sr-only" for="husage"><br><br>Age of Husband? </label>
+            <select class="form-control" id="husage" name="husage">
+                <option value="0">46-60</option>
+                <option value="1">31-45</option>
+				<option value="2">below 30</option>
+				<option value="3">above 60</option>
+            </select>
+			
+			<label class="sr-only" for="menenage"><br><br>Menopause End age? </label>
+            <select class="form-control" id="menendage" name="menenage">
+                <option value="0">40-51</option>
+                <option value="1">before 40</option>
+				<option value="2">after 51</option>
+            </select>
+			
+			<label class="sr-only" for="highfat"><br><br>Food contains high fat? </label>
+            <select class="form-control" id="highfat" name="highfat">
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select>
+			
+			<label class="sr-only" for="abrt"><br><br>Abortion?</label>
+            <select class="form-control" id="abrt" name="abrt">
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select>
+			
+        </div>
+         <br><br>
+        <div class="form-group">
+            <button class="btn btn-default" type="submit">Submit!</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

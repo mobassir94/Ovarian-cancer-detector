@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">OVARIAN CANCER DETECTOR</string>
+
+
+    <string name="submit">Submit</string>
+    <string name="menarche_start_early">Menarche start early?</string>
+    <string name="oral_contraception">Oral Contraception?</string>
+    <string name="diet_maintaining">Diet Maintaining?</string>
+    <string name="affected_by_breast_cancer">Affected By Breast Cancer?</string>
+    <string name="affected_by_cervical_cancer">Affected By cervical Cancer?</string>
+    <string name="cancer_history_in_family">Cancer History In family?</string>
+    <string name="education">Education?</string>
+    <string name="age_of_husband">Age of Husband?</string>
+    <string name="menopause_end_age">Menopause End age?</string>
+    <string name="food_contains_high_fat">Food contains high fat?</string>
+    <string name="abortion">Abortion?</string>
+
+
+    <string name="menarche">Menarche starts?</string>
+
+    <string-array name="menarche">
+        <item>early</item>
+        <item>late</item>
+        <item>normal</item>
+    </string-array>
+
+    <string name="oral">oral contraceptive?</string>
+
+    <string-array name="oral">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="diet">Do you maintain diet?</string>
+
+    <string-array name="diet">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+
+    <string name="breastcancer">Do you have breast cancer?</string>
+    <string-array name="breastcancer">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="cervical">Affected by cervical cancer?</string>
+    <string-array name="cervical">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="cancerinfamily">Cancer history in family?</string>
+    <string-array name="cancerinfamily">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+
+    <string name="choose_education">Your Education level?</string>
+    <string-array name="education">
+        <item>primary level</item>
+        <item>illitarate</item>
+        <item>graduated</item>
+    </string-array>
+
+
+    <string name="husbandsage">Your husbands age?</string>
+    <string-array name="husbandsage">
+        <item>46-60</item>
+        <item>31-45</item>
+        <item>above 60</item>
+        <item>below 30</item>
+    </string-array>
+
+
+    <string name="menopause">Menopause end age?</string>
+    <string-array name="menopause">
+        <item>40-51</item>
+        <item>before 40</item>
+        <item>after 52</item>
+
+    </string-array>
+
+    <string name="foodfat">Food contains high fat?</string>
+    <string-array name="foodfat">
+        <item>yes</item>
+        <item>no</item>
+
+    </string-array>
+
+    <string name="choose_abortion">Abortion?</string>
+
+    <string-array name="abortion">
+        <item>yes</item>
+        <item>no</item>
+
+    </string-array>
+    <string name="predict">Submit</string>
+    <string name="scores">YOUR SCORE IS 10</string>
+    <string name="level">YOUR RISK LEVEL IS HIGH</string>
+</resources>

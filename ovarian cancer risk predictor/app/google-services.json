@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "962276141161",
+    "firebase_url": "https://ovariancancerriskpredictor.firebaseio.com",
+    "project_id": "ovariancancerriskpredictor",
+    "storage_bucket": "ovariancancerriskpredictor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962276141161:android:685e6ef0cc408360",
+        "android_client_info": {
+          "package_name": "com.example.ovariancancerriskpredictor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962276141161-c0n7rt8n0ich526v58m7b6m72i7cb0ep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ovariancancerriskpredictor",
+            "certificate_hash": "6497ae2e8b037261aee4154c54535d29bf734b3b"
+          }
+        },
+        {
+          "client_id": "962276141161-809jamna512alhvivqhen7vdr6oqksev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd0ixH9k3cBDHoxoUmqqSfZcP97IsC3mM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962276141161-809jamna512alhvivqhen7vdr6oqksev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/holo_orange_dark">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:orientation="vertical"
+        tools:context=".MainActivity"
+
+        >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/menarche_start_early" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/menarche">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/oral_contraception" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/oral"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/diet_maintaining" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/diet"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/affected_by_breast_cancer" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/breastcancer"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/affected_by_cervical_cancer" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/cervical"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/cancer_history_in_family" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/cancerinfamily"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/choose_education" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/education"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/age_of_husband" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/husbandsage"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/menopause_end_age" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/menopause"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/food_contains_high_fat" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/foodfat"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/choose_abortion" />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/abortion"
+
+            ></android.support.v7.widget.AppCompatSpinner>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Predict" />
+
+
+    </LinearLayout>
+
+</ScrollView>
